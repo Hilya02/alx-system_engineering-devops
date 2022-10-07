@@ -1,7 +1,3 @@
-mv [[:upper:]]* /tmp/u
-rm *~
-rm *~
-rm *~
-rm *~
-rm *~
-rm *~
+#!/bin/bash
+rm *-
+
