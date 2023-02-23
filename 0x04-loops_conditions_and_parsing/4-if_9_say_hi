@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
-#Prints a string 10 times along with another th 4th time
-x=1
-while [ $x -le 10 ]
+# Conditions with while
+i=1
+while [ $i -le 10 ]
 do
+    if [ $i -ne 9 ]
+    then
 	echo "Best School"
-
-	if [ $x -eq 9 ]
-	then
-		echo "Hi"
-	fi
-
-	x=$(( x + 1 ))
+    else
+	echo -e "Best School\nHi"
+    fi
+    i=$((i + 1))
 done
