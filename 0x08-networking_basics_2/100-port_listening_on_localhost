@@ -2,4 +2,4 @@
 #
 # Listens on port 98 of localhost
 
-nc -l localhost -p 98
+nc -l localhost 98
