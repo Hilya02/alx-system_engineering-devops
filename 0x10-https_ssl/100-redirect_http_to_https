@@ -62,8 +62,8 @@ backend web-backend
     balance roundrobin
     option forwardfor
     redirect scheme https if !{ ssl_fc }
-    server 1216-web-01 35.243.214.144:80 check
-    server 1216-web-02 34.233.133.27:80 check
+    server 174023-web-01 34.224.83.219 check
+    server 174023-web-02 52.91.120.14 check
 
 backend letsencrypt-backend
    server letsencrypt 127.0.0.1:54321
