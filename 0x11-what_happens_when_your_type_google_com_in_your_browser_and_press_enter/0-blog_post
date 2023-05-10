@@ -1,19 +1,28 @@
-This article explains in simple terms a series of events that take place behind the scenes when you type a website URL into your web browser #ALX #SOFTWARE #ENGINEERING.
+# This article explains in simple terms a series of events that take place behind the scenes when you type a website URL into your web browser #ALX #SOFTWARE #ENGINEERING.
 When you type "https://www.google.com" into your web browser and press enter,
-DNS Request:
+
+## 1. DNS Request:
 The first thing that happens is your computer sends a Domain Name System (DNS) request to a DNS server to convert the domain name "www.google.com" into an IP address (a unique string of characters that identifies each computer using the Internet Protocol to communicate over a network). This is necessary because computers communicate with each other using IP addresses, not domain names. The DNS server looks up the IP address associated with "www.google.com" and returns it to your computer.
-2. TCP/IP:
+
+## 2. TCP/IP:
 Next, your computer establishes a Transmission Control Protocol/Internet Protocol (TCP/IP) connection with the IP address returned by the DNS server. This is the protocol that enables computers to communicate over the internet. The TCP/IP connection is a reliable, it breaks down the data into small packets, adds routing information to them, and sends them across the internet.
-3. Firewall:
+
+## 3. Firewall:
 A firewall is a network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. If you have a firewall enabled on your computer or network, it will check the incoming data packets to ensure they are not malicious.
-4. HTTPS/SSL:
+
+## 4. HTTPS/SSL:
 Once the TCP/IP connection is established, your browser sends an HTTPS request to the web server at the IP address. HTTPS is a secure version of HTTP (Hypertext Transfer Protocol), which is the protocol used for transmitting data over the internet. HTTPS uses SSL (Secure Sockets Layer) to encrypt the data being transmitted between your browser and the web server, making it more secure against eavesdropping and tampering.
-5. Load-balancer:
+
+## 5. Load-balancer:
 In computing, load balancing is the process of distributing a set of tasks over a set of resources, with the aim of making their overall processing more efficient.If Google's web server receives a high volume of traffic, it may use a load-balancer to distribute the traffic across multiple web servers.
-6. Web Server:
+
+## 6. Web Server:
 Assuming there is no need for load-balancing, the web server responds to your HTTPS request by sending the requested webpage back to your browser. The web server is a software application that runs on a physical server and generates webpages based on the HTTP or HTTPS requests it receives.
-7. Application Server:
+
+## 7. Application Server:
 If the requested webpage requires any dynamic content, such as a search result or personalized information, the web server will request it from an application server. An application server is a software framework that provides an environment in which applications can run and communicate with other software components. The application server generates the dynamic content and sends it back to the web server, which incorporates it into the webpage being sent to your browser.
-8. Database:
+
+## 8. Database:
 If the requested webpage requires data from a database, the application server will retrieve it from the database and incorporate it into the dynamic content. A database is a structured collection of data that can be accessed, managed, and updated electronically. Databases are used to store and organize large amounts of data, such as user account information, product catalogs, or search indexes.
+
 In conclusion, typing "https://www.google.com" into your web browser and pressing enter triggers a complex series of events that involve DNS requests, TCP/IP connections, firewalls, HTTPS/SSL encryption, load-balancers, web servers, application servers, and databases. All of these components work together seamlessly to bring you
